@@ -36,6 +36,9 @@ function getDevice() {
 }
 
 function getBattery() {
+    if ( typeof navigator.getBattery === 'undefined' ) {
+        return false;
+    }
 	navigator.getBattery().then(function(battery) {
         let data = {};
         data['charging'] = (battery.charging ? 'charging' : 'not charging');
