@@ -15,6 +15,7 @@ function init() {
 	getFingerprintJSTest();
 	getClientJSTest();
 
+	console.log('Fin');
 }
 
 function getDevice() {

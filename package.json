@@ -4,8 +4,17 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm install ; node server.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "clientjs": "^0.1.11",
+    "express": "^4.15.2",
+    "fingerprintjs2": "^1.5.1"
+  },
+  "engines": {
+    "node": "4.1.1"
+  }
 }
