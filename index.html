@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fingerprint Browser</title>
+	<style type="text/css">
+		pre {outline: 1px solid #ccc; padding: 5px; margin: 5px; overflow: scroll; }
+		.string { color: green; }
+		.number { color: darkorange; }
+		.boolean { color: blue; }
+		.null { color: magenta; }
+		.key { color: red; }
+	</style>
+</head>
+<body>
+
+<h2>Device</h2>
+<h3>CPU</h3>
+<div id="device"></div>
+<h3>GPU</h3>
+<div id="gpu"></div>
+<h3>Battery</h3>
+<div id="battery"></div>
+<hr>
+
+<h2>Geolocation by IP</h2>
+<!-- <div id="location__map"></div> -->
+<!-- <div id="location__data"></div> -->
+<div id="geo-ip__data"></div>
+<div id="geo-ip__map"></div>
+<hr>
+
+<h2>FingerPrint Browser</h2>
+<div id="manual">
+	<h3>Manual Test</h3>
+	<div id="manual__data"></div>
+</div>
+<div id="fingerprint">
+	<h3>FingerprintJS Test</h3>
+	<div id="fingerprint__data"></div>
+</div>
+<div id="client">
+	<h3>Client Test</h3>
+	<div id="client__data"></div>
+</div>
+<hr>
+
+<canvas id="glcanvas" width="1" height="1"></canvas>
+<script type="text/javascript" src="node_modules/fingerprintjs2/dist/fingerprint2.min.js"></script>
+<script type="text/javascript" src="node_modules/clientjs/dist/client.min.js"></script>
+<script type="text/javascript" src="//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/UAParser.js/0.7.12/ua-parser.min.js"></script>
+
+<script type="text/javascript" src="fingerprint/adobe.js"></script>
+<script type="text/javascript" src="fingerprint/browser.js"></script>
+<script type="text/javascript" src="fingerprint/android-connection.js"></script>
+<script type="text/javascript" src="fingerprint/canvas.js"></script>
+<script type="text/javascript" src="fingerprint/cookie.js"></script>
+<script type="text/javascript" src="fingerprint/fonts.js"></script>
+<script type="text/javascript" src="fingerprint/fontsmoothing.js"></script>
+<script type="text/javascript" src="fingerprint/formfields.js"></script>
+<script type="text/javascript" src="fingerprint/java.js"></script>
+<script type="text/javascript" src="fingerprint/language.js"></script>
+<script type="text/javascript" src="fingerprint/latency.js"></script>
+<script type="text/javascript" src="fingerprint/os.js"></script>
+<script type="text/javascript" src="fingerprint/plugins.js"></script>
+<script type="text/javascript" src="fingerprint/screen.js"></script>
+<script type="text/javascript" src="fingerprint/silverlight.js"></script>
+<script type="text/javascript" src="fingerprint/timezone.js"></script>
+<script type="text/javascript" src="fingerprint/touch.js"></script>
+<script type="text/javascript" src="fingerprint/true-browser.js"></script>
+<script type="text/javascript" src="fingerprint/useragent.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
