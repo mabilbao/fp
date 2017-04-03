@@ -7,8 +7,8 @@ function init() {
 	getGPU();
 
 	// Geolocation
-	// getGeolocation();
-	getGeoIp();
+	getGeolocation();
+	// getGeoIp();
 
 	// Fingerprint
 	getManualTest();
